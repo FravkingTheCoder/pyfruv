@@ -141,14 +141,18 @@ phone_book = {"alice":983, "john":121, "dream":911} # uses curly brackets
 
 phone_book['pop'] = 9886380436 # this is how u add to the dictionary, inside the brackets is the key and then you specify the value it equals to
 
-for key in phone_book:
-  if phone_book[key] == 911:
-	print(f'oh shit its dream call the cops on his ass: {phone_book[key]}')
-	print("Ring.\nRing..\nRing...\nDREAM ON THE GROUND U PREDATOR WE KNOW U LIKE KIDS")
-	print("Calling Control, suspect tried to flee but we shot him and got him down.")
-	break
-  else:
-	print(f"{key}:{phone_book[key]}")
+#  for key in phone_book:
+#   if phone_book[key] == 911:
+# 	print(f'oh shit its dream call the cops on his ass: {phone_book[key]}')
+# 	print("Ring.\nRing..\nRing...\nDREAM ON THE GROUND U PREDATOR WE KNOW U LIKE KIDS")
+# 	print("Calling Control, suspect tried to flee but we shot him and got him down.")
+# 	break
+#   else:
+# 	print(f"{key}:{phone_book[key]}")
+# 
 
+for key,value in phone_book.items():
+  print(f"\nKey: {key}")
+  print(f"Value: {value}")
 
-
+print(phone_book.items())
